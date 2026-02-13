@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautiful Valentine's Day love story timeline">
+  <meta name="keywords" content="valentine, love, romance, timeline, relationship">
+  <meta name="author" content="Your Name">
+
+  <title>Our Love Story 💕</title>
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Splash Screen / Enter Button -->
+  <div id="splashScreen" class="splash-screen">
+    <div class="splash-content">
+      <h1 class="splash-title">💕</h1>
+      <h2 class="splash-subtitle">Our Love Story</h2>
+      <button id="enterBtn" class="enter-button">
+        <span>Click to Enter</span>
+        <span class="enter-icon">❤️</span>
+      </button>
+      <p class="splash-hint">With Music & Love</p>
+    </div>
+  </div>
+
+  <!-- Floating Hearts Background -->
+  <div class="hearts-bg"></div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Music Control Button -->
+  <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+    <span class="music-icon">🎵</span>
+    <span class="music-text">Playing...</span>
+  </button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero-title">Our Love Story</h1>
+    <p class="hero-subtitle">Every moment with you is a beautiful memory</p>
+    <div class="hero-heart">💕</div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <h2 class="section-title">Our Journey Together</h2>
+
+    <div class="timeline">
+
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder1.jpg" alt="First Meeting" class="timeline-image" id="img1">
+          <div class="timeline-date">The Beginning</div>
+          <h3 class="timeline-title">The Day We Met</h3>
+          <p class="timeline-description">
+            From the moment our eyes met, I knew you were special. That first smile,
+            that first conversation - it was the start of something magical.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder2.jpg" alt="First Date" class="timeline-image" id="img2">
+          <div class="timeline-date">Falling Deeper</div>
+          <h3 class="timeline-title">Our First Date</h3>
+          <p class="timeline-description">
+            Nervous butterflies, genuine laughter, and endless conversations.
+            That evening confirmed what my heart already knew - you were the one.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder3.jpg" alt="Special Moment" class="timeline-image" id="img3">
+          <div class="timeline-date">A Milestone</div>
+          <h3 class="timeline-title">Our First Adventure</h3>
+          <p class="timeline-description">
+            Exploring new places together, creating memories that would last a lifetime.
+            Every moment with you feels like an adventure.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 4 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder4.jpg" alt="Celebration" class="timeline-image" id="img4">
+          <div class="timeline-date">Celebrating Love</div>
+          <h3 class="timeline-title">Making It Official</h3>
+          <p class="timeline-description">
+            The day everything became official. Standing together, knowing that
+            this was just the beginning of our forever.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 5 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder5.jpg" alt="Together Forever" class="timeline-image" id="img5">
+          <div class="timeline-date">Forever & Always</div>
+          <h3 class="timeline-title">Our Future Together</h3>
+          <p class="timeline-description">
+            Every day with you is a gift. Here's to all the memories we've made
+            and all the beautiful moments still to come. I love you more each day.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 6: Spring Trip -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder6.jpg" alt="Spring Trip" class="timeline-image" id="img6">
+          <div class="timeline-date">🌸 Spring</div>
+          <h3 class="timeline-title">Spring in Nha Trang</h3>
+          <p class="timeline-description">
+            Our beautiful spring getaway to Nha Trang - the stunning beach city! Taking pictures together
+            in so many amazing places, exploring the fascinating ocean museum, experiencing the spectacular
+            water show at Vinpearl, and strolling through the charming European-style harbour. Every moment
+            was magical with you by my side.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 7: First Gift -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder7.jpg" alt="First Gift" class="timeline-image" id="img7">
+          <div class="timeline-date">💝 A Special Gift</div>
+          <h3 class="timeline-title">Your Piano Song for Me</h3>
+          <p class="timeline-description">
+            The most beautiful gift I've ever received - a piano song composed and played just for me.
+            Every note was filled with love, every melody touched my heart. That moment, listening to
+            you perform this masterpiece, I knew how deeply you cared.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 8: Summer Adventure -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder8.jpg" alt="Summer Beach" class="timeline-image" id="img8">
+          <div class="timeline-date">☀️ Summer</div>
+          <h3 class="timeline-title">Summer Journey Through History</h3>
+          <p class="timeline-description">
+            Exploring Vietnam's rich heritage together - visiting the majestic Minh Mang Tomb, wandering
+            through the imperial Hue Palace, being mesmerized by the Hoi An Memories show, and watching
+            the spectacular fireworks light up the Han River. So many beautiful memories created with you
+            by my side.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 9: My Gift to You -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder9.jpg" alt="Gift Exchange" class="timeline-image" id="img9">
+          <div class="timeline-date">🎁 From My Heart</div>
+          <h3 class="timeline-title">My Gift to You - Mon Fleur</h3>
+          <p class="timeline-description">
+            A special gift engraved with "Mon Fleur" - my flower. This gift carries a profound message:
+            you are the only and most magnificent flower I have ever encountered. In a garden of countless
+            blooms, you shine the brightest, the most beautiful, the one that captured my heart forever.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 10: Fall Together -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder10.jpg" alt="Fall Season" class="timeline-image" id="img10">
+          <div class="timeline-date">🍂 Autumn</div>
+          <h3 class="timeline-title">Autumn Trip to Mui Ne</h3>
+          <p class="timeline-description">
+            Our wonderful fall getaway to Mui Ne with your friends - so much laughter, so much joy!
+            Taking countless pictures together, enjoying every moment, and creating beautiful memories
+            that we'll cherish forever. Every adventure with you is special.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 11: Birthday Surprise -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder11.jpg" alt="Birthday" class="timeline-image" id="img11">
+          <div class="timeline-date">🎂 Celebration</div>
+          <h3 class="timeline-title">My Birthday Surprise</h3>
+          <p class="timeline-description">
+            Even on my birthday, you showered me with so many thoughtful gifts. Each one was chosen
+            with such care and love. I truly appreciate every single gift and the beautiful heart
+            behind them. You always know how to make me feel incredibly special.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 12: Winter Wonderland -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder12.jpg" alt="Winter Snow" class="timeline-image" id="img12">
+          <div class="timeline-date">❄️ Winter</div>
+          <h3 class="timeline-title">Winter Escape to Da Lat</h3>
+          <p class="timeline-description">
+            We had a wonderful trip to Da Lat at the end of the year. Enjoying the crisp, cool air
+            together, sipping warm milk and savoring delicious local specialties. Walking hand in hand
+            to quiet places where it's just the two of us - those intimate moments are my most treasured
+            memories.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 13: Anniversary Gift -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder13.jpg" alt="Anniversary" class="timeline-image" id="img13">
+          <div class="timeline-date">💖 Anniversary</div>
+          <h3 class="timeline-title">Our First Anniversary</h3>
+          <p class="timeline-description">
+            Celebrating our first anniversary was a momentous occasion. A passed year of love, laughter,
+            and growing together reminds me that choosing you was the best decision I ever made.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 14: Special Moment -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder14.jpg" alt="Special Memory" class="timeline-image" id="img14">
+          <div class="timeline-date">✨ A Perfect Day</div>
+          <h3 class="timeline-title">That Perfect Day</h3>
+          <p class="timeline-description">
+            Sometimes it's the unplanned moments that become the most precious. This day,
+            with all its spontaneity and joy, is forever etched in my heart.
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 15: Forever -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="placeholder15.jpg" alt="Looking Forward" class="timeline-image" id="img15">
+          <div class="timeline-date">💫 Forever & Always</div>
+          <h3 class="timeline-title">Our Future Together</h3>
+          <p class="timeline-description">
+            Every day with you is a gift. Here's to all the memories we've made and all the
+            beautiful moments still to come. I love you more each day, forever and always.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">Forever Yours, With All My Love 💖</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
